@@ -1,3 +1,25 @@
-.header {
-    display: grid, inline-grid;
-  }
+header {
+    display: grid;
+    width: 100%;
+    background-color: grey;
+};
+
+
+body {
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    grid-template-rows: 25% 100px auto;
+}
+article {
+    display: grid; 
+    grid-template-columns: 50%, 50%;
+    grid-template-rows: 25% 100px;
+}
+
+
+
+
+footer {
+    width: 100%;
+    background-color: grey;
+};
