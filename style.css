@@ -1,14 +1,61 @@
-header {
-    display: grid;
+header.banner {
     width: 100%;
     background-color: grey;
-};
-
-
-body {
     display: grid;
+    grid-template-columns: 5;
+    grid-template-rows: 1;
+};
+.logo {
+    grid-area: logo;
+}
+div.nav1 {
+    grid-area: nav1;
+}
+div.nav2 {
+    grid-area: nav2;
+}
+div.nav3 {
+    grid-area: nav3;
+}
+div.nav4 {
+    grid-area: nav 4;
+}
+footer {
+    grid-area: footer;
+}
+.hero {
+    grid-area: hero;
+}
+.sub-banner {
+    grid-area: subbanner;
+}
+article.paragraph{
+    grid-area: paragraph;
+}
+article.article-img {
+    grid-area: article-img;
+}
+html {
+    display: grid;
+    grid-template-columns: auto, auto, auto, auto, auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "logo nav1 nav2 nav3 nav4"
+      "hero hero hero hero hero"
+      "subbanne subbanner subbanner subbanner"
+      "article-img article-img . paragraph paragraph"
+      "footer footer footer footer";
+  }
+
+/* 
+body {
+    display: inline-grid;
     grid-template-columns: 40px auto 40px;
     grid-template-rows: 25% 100px auto;
+    grid-column-gap: 30px;
+}        
+body.hero {
+    position: center;
 }
 article {
     display: grid; 
@@ -22,4 +69,4 @@ article {
 footer {
     width: 100%;
     background-color: grey;
-};
+}; */
